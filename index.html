@@ -41,17 +41,25 @@ fill: #FDF5E6;
 
     .part {
       
-      fill: #92a09f38;
-      stroke: #DCD0FF;
-      stroke-width: 1;
-      cursor: pointer;
-      transition: fill 0.2s;
+fill: rgba(220, 208, 255, 0.2); 
+  stroke: #DCD0FF;
+  stroke-width: 1.5; /* Slightly thicker for better definition */
+  cursor: pointer;
+  transition: all 0.3s ease;
     }
 
-    /* when clicked */
-    .part.selected {
-      fill: #8D6E9E;
-    }
+/* Hover state: Makes it feel interactive */
+.part:hover {
+  fill: rgba(220, 208, 255, 0.5);
+  stroke: #FFFFFF;
+}
+
+/* When clicked/selected */
+.part.selected {
+  /* A rich, deep purple pulled from the flower centers */
+  fill: rgba(85, 69, 111, 0.9);
+  stroke: #C5A059; /* Adds a gold border to the selection */
+}
   </style>
 </head>
 <body>
@@ -2216,6 +2224,7 @@ fill: #FDF5E6;
 
 </body>
 </html>
+
 
 
 
