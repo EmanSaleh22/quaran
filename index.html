@@ -33,15 +33,14 @@ position: relative;
 
     } 
 
-text g#layer2 {
+ g#layer2 {
   fill: #2E1A47; /* Dark Midnight Plum */
   font-weight: bold;
   transition: fill 0.3s ease;
 }
 
 /* IMPORTANT: If the part is selected and becomes dark purple... */
-.part.selected + text, 
-.part.selected ~ g text {
+.part.selected + g#layer2, {
   fill: #FFFFFF; /* Change text to White so it's visible on dark backgrounds */
 }
 
@@ -2230,6 +2229,7 @@ fill: rgba(220, 208, 255, 0.2);
 
 </body>
 </html>
+
 
 
 
